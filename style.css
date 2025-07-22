@@ -6,11 +6,17 @@
 .primary-btn{
   padding: 10px 24px;
   background-color: #E02C6D;
+  border: 2px solid #E02C6D;
   color: #fff;
-  border: none;
   border-radius: 40px;
+  margin-top: 10px;
 }
-
+.primary-btn:hover{
+  background-color: #fff;
+  /* border: 2px solid #E02C6D; */
+  color: #E02C6D;
+  font-weight: 700;
+}
 
 
 .header{
@@ -43,11 +49,12 @@
 /* banner styles */
 .banner-container{
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
   gap: 2%;
 }
 .banner-content{
-  width: 60%;
+  /* width: 60%; */
   color: #3A3A3A;
 }
 .banner-content h2{
@@ -59,9 +66,10 @@
   font-weight: 600;
 }
 .banner-image{
-  width: 30%;
+  /* width: 100%; */
   background-image: url(./images/Circle\ design.svg);
   background-repeat: no-repeat;
+  background-position: left;
 }
 .banner-image img{
   max-width: 100%;
