@@ -1,5 +1,9 @@
-.poppins {
+.body {
   font-family: 'Poppins', sans-serif;
+  max-width: 1140px;
+  margin: 50px auto;
+
+
 }
 
 /* shared styles */
@@ -21,13 +25,13 @@
 
 .header{
   max-width: 1140px;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 .nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
 }
 .nav-logo{
   font-size: 1.5rem;
@@ -49,9 +53,11 @@
 /* banner styles */
 .banner-container{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   gap: 2%;
+  position: relative;
+  margin-bottom: 200px;
 }
 .banner-content{
   /* width: 60%; */
@@ -64,13 +70,27 @@
 }
 .banner-content p{
   font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .banner-image{
-  /* width: 100%; */
+  width: 100%;
   background-image: url(./images/Circle\ design.svg);
   background-repeat: no-repeat;
-  background-position: left;
+  position: absolute;
+  left: 680px;
+
 }
 .banner-image img{
   max-width: 100%;
 }
+
+/* logo section */
+.logos{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  padding: 30px 0;
+}
+
